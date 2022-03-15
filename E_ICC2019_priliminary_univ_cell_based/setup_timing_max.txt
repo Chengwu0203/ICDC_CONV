@@ -1,0 +1,106 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : CONV
+Version: S-2021.06-SP2
+Date   : Tue Mar 15 23:06:10 2022
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: idata[2] (input port clocked by clk)
+  Endpoint: tmp_reg[39]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  CONV               tsmc13_wl10           slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.50       0.50
+  input external delay                                    5.00       5.50 f
+  idata[2] (in)                                           0.01       5.51 f
+  U455/Y (INVXL)                                          0.37       5.88 r
+  U456/Y (INVX6)                                          0.56       6.43 f
+  mult_229/a[2] (CONV_DW_mult_tc_1)                       0.00       6.43 f
+  mult_229/U907/Y (XNOR2X4)                               0.36       6.79 r
+  mult_229/U904/Y (NOR2BX4)                               0.78       7.58 r
+  mult_229/U1036/Y (AO22X1)                               0.41       7.98 r
+  mult_229/U1209/Y (CLKINVX6)                             0.09       8.08 f
+  mult_229/U1122/Y (OAI21XL)                              0.39       8.47 r
+  mult_229/U766/Y (CLKXOR2X8)                             0.40       8.87 f
+  mult_229/U429/S (CMPR22X4)                              0.18       9.04 f
+  mult_229/U331/Y (NOR2X8)                                0.13       9.17 r
+  mult_229/U1255/Y (CLKINVX6)                             0.09       9.27 f
+  mult_229/U329/Y (NAND2X8)                               0.06       9.33 r
+  mult_229/U327/Y (CLKXOR2X8)                             0.21       9.54 f
+  mult_229/product[4] (CONV_DW_mult_tc_1)                 0.00       9.54 f
+  mult_add_229_aco/a[4] (CONV_DW_mult_uns_0)              0.00       9.54 f
+  mult_add_229_aco/U92/Y (AND2X1)                         0.35       9.89 f
+  mult_add_229_aco/product[4] (CONV_DW_mult_uns_0)        0.00       9.89 f
+  add_229_aco/B[4] (CONV_DW01_add_1)                      0.00       9.89 f
+  add_229_aco/U1_4/CO (ADDFHX4)                           0.31      10.20 f
+  add_229_aco/U1_5/CO (ADDFHX4)                           0.20      10.41 f
+  add_229_aco/U1_6/CO (ADDFHX4)                           0.20      10.61 f
+  add_229_aco/U1_7/CO (ADDFHX4)                           0.20      10.81 f
+  add_229_aco/U1_8/CO (ADDFHX4)                           0.20      11.02 f
+  add_229_aco/U1_9/CO (ADDFHX4)                           0.20      11.22 f
+  add_229_aco/U1_10/CO (ADDFHX4)                          0.20      11.42 f
+  add_229_aco/U1_11/CO (ADDFHX4)                          0.20      11.63 f
+  add_229_aco/U1_12/CO (ADDFHX4)                          0.20      11.83 f
+  add_229_aco/U1_13/CO (ADDFHX4)                          0.20      12.03 f
+  add_229_aco/U1_14/CO (ADDFHX4)                          0.20      12.24 f
+  add_229_aco/U1_15/CO (ADDFHX4)                          0.19      12.43 f
+  add_229_aco/U1_16/CO (ADDFXL)                           0.47      12.90 f
+  add_229_aco/U1_17/CO (ADDFXL)                           0.53      13.43 f
+  add_229_aco/U1_18/CO (ADDFXL)                           0.53      13.95 f
+  add_229_aco/U1_19/CO (ADDFXL)                           0.53      14.48 f
+  add_229_aco/U1_20/CO (ADDFXL)                           0.53      15.01 f
+  add_229_aco/U1_21/CO (ADDFXL)                           0.58      15.59 f
+  add_229_aco/U1_22/CO (ADDFHX4)                          0.27      15.86 f
+  add_229_aco/U1_23/CO (ADDFHX4)                          0.20      16.06 f
+  add_229_aco/U1_24/CO (ADDFHX4)                          0.20      16.26 f
+  add_229_aco/U1_25/CO (ADDFHX4)                          0.20      16.47 f
+  add_229_aco/U1_26/CO (ADDFHX4)                          0.20      16.67 f
+  add_229_aco/U1_27/CO (ADDFHX4)                          0.20      16.87 f
+  add_229_aco/U1_28/CO (ADDFHX4)                          0.20      17.08 f
+  add_229_aco/U1_29/CO (ADDFHX4)                          0.20      17.28 f
+  add_229_aco/U1_30/CO (ADDFHX4)                          0.20      17.48 f
+  add_229_aco/U1_31/CO (ADDFHX4)                          0.20      17.69 f
+  add_229_aco/U1_32/CO (ADDFHX4)                          0.20      17.89 f
+  add_229_aco/U1_33/CO (ADDFHX4)                          0.20      18.09 f
+  add_229_aco/U1_34/CO (ADDFHX4)                          0.19      18.29 f
+  add_229_aco/U1_35/CO (ADDFXL)                           0.52      18.81 f
+  add_229_aco/U1_36/CO (ADDFHX4)                          0.27      19.08 f
+  add_229_aco/U1_37/CO (ADDFHX4)                          0.20      19.28 f
+  add_229_aco/U1_38/CO (ADDFHX4)                          0.20      19.48 f
+  add_229_aco/U1_39/S (ADDFHX4)                           0.25      19.73 f
+  add_229_aco/SUM[39] (CONV_DW01_add_1)                   0.00      19.73 f
+  U165/Y (AO22X1)                                         0.36      20.09 f
+  U397/Y (CLKMX2X6)                                       0.20      20.30 f
+  tmp_reg[39]/D (DFFRX1)                                  0.00      20.30 f
+  data arrival time                                                 20.30
+
+  clock clk (rise edge)                                  30.00      30.00
+  clock network delay (ideal)                             0.50      30.50
+  clock uncertainty                                      -0.10      30.40
+  tmp_reg[39]/CK (DFFRX1)                                 0.00      30.40 r
+  library setup time                                     -0.21      30.19
+  data required time                                                30.19
+  --------------------------------------------------------------------------
+  data required time                                                30.19
+  data arrival time                                                -20.30
+  --------------------------------------------------------------------------
+  slack (MET)                                                        9.90
+
+
+1
